@@ -28,4 +28,22 @@ void main() {
       });
     });
   });
+
+  group('Transformation', () {
+    group('Case', () {
+      group('firstToUpper()', () {
+        test('should transform first character to upper', () {
+          expect('alphabet'.firstToUpper(), 'Alphabet');
+        });
+
+        test('should not transform string if first character already in upper',
+            () {
+          expect('ABC'.firstToUpper(), 'ABC');
+        });
+      });
+    });
+  });
+
+  /// 'alphabet'.firstToUpper(); // 'Alphabet'
+  /// 'ABC'.firstToUpper();      // 'ABC
 }

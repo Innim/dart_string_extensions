@@ -18,3 +18,9 @@ Than add `import 'package:string_ext/string_ext.dart';` to the file for use exte
 #### Equality
 
 * `isNullOrEmpty`/`isNotNullNorEmpty` - check for a `null` or empty.
+
+### Transformation
+
+#### Case 
+
+* `firstToUpper()` - converts first character in the string to upper case.

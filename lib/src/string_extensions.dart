@@ -13,4 +13,26 @@ extension StringExtensions<E> on String {
   bool get isNotNullNorEmpty {
     return this != null && isNotEmpty;
   }
+
+  // Transformation
+
+  // Transformation - Case
+
+  /// Converts first character in this string to upper case.
+  ///
+  /// If the first character of the string is already in upper case,
+  /// this method returns `this`.
+  ///
+  /// Example:
+  /// ```
+  /// 'alphabet'.firstToUpper(); // 'Alphabet'
+  /// 'ABC'.firstToUpper();      // 'ABC
+  /// ```
+  ///
+  /// This function uses `toUpperCase()`, that uses
+  /// the language independent Unicode mapping and thus only
+  /// works in some languages.
+  String firstToUpper() => (this?.isNotEmpty ?? false)
+      ? '${this[0].toUpperCase()}${substring(1)}'
+      : this;
 }
