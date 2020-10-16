@@ -1,3 +1,4 @@
-## [0.0.1] - TODO: Add release date.
+## [0.1.0] - 2020-10-16
 
-* TODO: Describe initial release.
+* Getter `isNullOrEmpty` - returns `true` if the string is `null` or empty.
+* Getter `isNotNullNorEmpty` - returns `true` if the string is not `null` and not empty.

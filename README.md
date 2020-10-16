@@ -11,3 +11,10 @@ To use this plugin, add `string_ext` as a [dependency in your pubspec.yaml file]
 Than add `import 'package:string_ext/string_ext.dart';` to the file for use extension methods.
 
 
+## Methods classifier
+
+### Common
+
+#### Equality
+
+* `isNullOrEmpty`/`isNotNullNorEmpty` - check for a `null` or empty.
