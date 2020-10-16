@@ -10,6 +10,18 @@ To use this plugin, add `string_ext` as a [dependency in your pubspec.yaml file]
 
 Than add `import 'package:string_ext/string_ext.dart';` to the file for use extension methods.
 
+### Example
+
+``` dart
+import 'package:string_ext/string_ext.dart';
+
+void main() {
+  final foo = 'john';
+  final bar = foo.firstToUpper();
+  print('Name: $bar');
+  // Output: Name: John
+}
+```
 
 ## Methods classifier
 
