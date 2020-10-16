@@ -1,0 +1,15 @@
+name: string_ext
+description: Dart extension methods for String. Provides a more convenient and powerful API for working with strings.
+version: 0.1.0
+homepage: https://github.com/innim/
+repository: https://github.com/Innim/dart_string_extensions
+issue_tracker: https://github.com/Innim/dart_string_extensions/issues
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+
+dev_dependencies:
+  test: ^1.14.2
+  pedantic: ^1.9.2
