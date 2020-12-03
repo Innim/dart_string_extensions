@@ -1,8 +1,9 @@
 # string_ext
 
 [![pub package](https://img.shields.io/pub/v/string_ext)](https://pub.dartlang.org/packages/string_ext)
+![Dart CI](https://github.com/Innim/dart_string_extensions/workflows/Dart%20CI/badge.svg?branch=main)
 
-Dart extension method for String.
+Dart extension methods for a `String`.
 
 ## Usage
 
