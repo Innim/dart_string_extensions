@@ -2,18 +2,6 @@
 extension StringExtensions<E> on String {
   // Common
 
-  // Common - Equality
-
-  /// Returns `true` if this string is `null` or empty.
-  bool get isNullOrEmpty {
-    return this == null || isEmpty;
-  }
-
-  /// Returns `true` if this string is not `null` and not empty.
-  bool get isNotNullNorEmpty {
-    return this != null && isNotEmpty;
-  }
-
   // Transformation
 
   // Transformation - Case
@@ -32,7 +20,22 @@ extension StringExtensions<E> on String {
   /// This function uses `toUpperCase()`, that uses
   /// the language independent Unicode mapping and thus only
   /// works in some languages.
-  String firstToUpper() => (this?.isNotEmpty ?? false)
-      ? '${this[0].toUpperCase()}${substring(1)}'
-      : this;
+  String firstToUpper() => '${this[0].toUpperCase()}${substring(1)}';
+}
+
+/// Extension methods for a nullable [String].
+extension NullableStringExtensions<E> on String? {
+  // Common
+
+  // Common - Equality
+
+  /// Returns `true` if this string is `null` or empty.
+  bool get isNullOrEmpty {
+    return this?.isEmpty ?? true;
+  }
+
+  /// Returns `true` if this string is not `null` and not empty.
+  bool get isNotNullNorEmpty {
+    return this?.isNotEmpty ?? false;
+  }
 }

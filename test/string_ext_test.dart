@@ -6,7 +6,7 @@ void main() {
     group('Equality', () {
       group('isNullOrEmpty/isNotNullOrEmpty', () {
         test('null string', () {
-          String foo;
+          String? foo;
 
           expect(foo.isNullOrEmpty, true);
           expect(foo.isNotNullNorEmpty, false);
@@ -43,7 +43,4 @@ void main() {
       });
     });
   });
-
-  /// 'alphabet'.firstToUpper(); // 'Alphabet'
-  /// 'ABC'.firstToUpper();      // 'ABC
 }
