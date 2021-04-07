@@ -32,8 +32,14 @@ void main() {
 
 * `isNullOrEmpty`/`isNotNullNorEmpty` - check for a `null` or empty.
 
-### Transformation
+### Modification
 
 #### Case 
 
 * `firstToUpper()` - converts first character in the string to upper case.
+
+### Transformation
+
+#### To Iterable
+
+* `chunks()` - splits string by chunk with defined size.

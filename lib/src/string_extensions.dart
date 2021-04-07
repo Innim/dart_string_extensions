@@ -1,3 +1,5 @@
+import 'dart:math';
+
 /// Extension methods for a [String].
 extension StringExtensions<E> on String {
   // Common
@@ -14,9 +16,9 @@ extension StringExtensions<E> on String {
     return this != null && isNotEmpty;
   }
 
-  // Transformation
+  // Modification
 
-  // Transformation - Case
+  // Modification - Case
 
   /// Converts first character in this string to upper case.
   ///
@@ -35,4 +37,33 @@ extension StringExtensions<E> on String {
   String firstToUpper() => (this?.isNotEmpty ?? false)
       ? '${this[0].toUpperCase()}${substring(1)}'
       : this;
+
+  // Transformation
+
+  // Transformation - to Interable
+
+  /// Splits string by chunks with specified [size].
+  ///
+  /// If string is empty than empty [Intarbale] will be returned.
+  ///
+  /// If [size] less or equal 0, that [ArgumentError] will be raised.
+  Iterable<String> chunks(int size) sync* {
+    if (isEmpty) return;
+
+    if (size <= 0) {
+      throw ArgumentError.value(size, 'size', 'Should be more than zero');
+    }
+
+    final total = length;
+    if (total <= size) {
+      yield this;
+    } else {
+      var start = 0;
+      do {
+        final end = start + size;
+        yield substring(start, min(end, total));
+        start = end;
+      } while (start < total);
+    }
+  }
 }
