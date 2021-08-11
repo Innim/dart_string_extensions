@@ -41,6 +41,21 @@ void main() {
           expect('ABC'.firstToUpper(), 'ABC');
         });
       });
+
+      group('firstToLower()', () {
+        test('should transform first character to lower', () {
+          expect('Alphabet'.firstToLower(), 'alphabet');
+        });
+
+        test('should transform only first character to lower', () {
+          expect('ABC'.firstToLower(), 'aBC');
+        });
+
+        test('should not transform string if first character already in lower',
+            () {
+          expect('abc'.firstToLower(), 'abc');
+        });
+      });
     });
   });
 
@@ -101,7 +116,4 @@ void main() {
       });
     });
   });
-
-  /// 'alphabet'.firstToUpper(); // 'Alphabet'
-  /// 'ABC'.firstToUpper();      // 'ABC
 }

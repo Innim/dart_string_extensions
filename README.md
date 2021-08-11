@@ -36,7 +36,7 @@ void main() {
 
 #### Case 
 
-* `firstToUpper()` - converts first character in the string to upper case.
+* `firstToUpper()`/`firstToLower()` - converts first character in the string to upper/lower case.
 
 ### Transformation
 

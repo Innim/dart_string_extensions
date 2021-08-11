@@ -38,6 +38,25 @@ extension StringExtensions<E> on String {
       ? '${this[0].toUpperCase()}${substring(1)}'
       : this;
 
+  /// Converts first character in this string to lower case.
+  ///
+  /// If the first character of the string is already in lower case,
+  /// this method returns `this`.
+  ///
+  /// Example:
+  /// ```
+  /// 'Alphabet'.firstToLower(); // 'alphabet'
+  /// 'ABC'.firstToLower();      // 'aBC'
+  /// 'abc'.firstToLower();      // 'abc'
+  /// ```
+  ///
+  /// This function uses `toLowerCase()`, that uses
+  /// the language independent Unicode mapping and thus only
+  /// works in some languages.
+  String firstToLower() => (this?.isNotEmpty ?? false)
+      ? '${this[0].toLowerCase()}${substring(1)}'
+      : this;
+
   // Transformation
 
   // Transformation - to Interable
