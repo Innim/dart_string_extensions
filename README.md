@@ -2,6 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/string_ext)](https://pub.dartlang.org/packages/string_ext)
 ![Dart CI](https://github.com/Innim/dart_string_extensions/workflows/Dart%20CI/badge.svg?branch=main)
+[![innim lint](https://img.shields.io/badge/style-innim_lint-40c4ff.svg)](https://pub.dev/packages/innim_lint)
 
 Dart extension methods for a `String`.
 
@@ -32,8 +33,14 @@ void main() {
 
 * `isNullOrEmpty`/`isNotNullNorEmpty` - check for a `null` or empty.
 
-### Transformation
+### Modification
 
 #### Case 
 
-* `firstToUpper()` - converts first character in the string to upper case.
+* `firstToUpper()`/`firstToLower()` - converts first character in the string to upper/lower case.
+
+### Transformation
+
+#### To Iterable
+
+* `chunks()` - splits string by chunk with defined size.
