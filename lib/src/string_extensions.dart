@@ -22,7 +22,8 @@ extension StringExtensions<E> on String {
   /// This function uses `toUpperCase()`, that uses
   /// the language independent Unicode mapping and thus only
   /// works in some languages.
-  String firstToUpper() => '${this[0].toUpperCase()}${substring(1)}';
+  String firstToUpper() =>
+      isNotEmpty ? '${this[0].toUpperCase()}${substring(1)}' : this;
 
   /// Converts first character in this string to lower case.
   ///

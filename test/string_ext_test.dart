@@ -40,6 +40,14 @@ void main() {
             () {
           expect('ABC'.firstToUpper(), 'ABC');
         });
+
+        test('should not transform empty string', () {
+          expect(''.firstToUpper(), '');
+        });
+
+        test('should transform string with only 1 character', () {
+          expect('a'.firstToUpper(), 'A');
+        });
       });
 
       group('firstToLower()', () {
@@ -54,6 +62,14 @@ void main() {
         test('should not transform string if first character already in lower',
             () {
           expect('abc'.firstToLower(), 'abc');
+        });
+
+        test('should not transform empty string', () {
+          expect(''.firstToLower(), '');
+        });
+
+        test('should transform string with only 1 character', () {
+          expect('A'.firstToLower(), 'a');
         });
       });
     });
