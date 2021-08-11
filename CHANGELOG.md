@@ -1,5 +1,6 @@
 
 * Method `firstToLower()` - converts first character in the string to lower case.
+* Added `innim_lint` analysis ruleset.
 
 ## [0.1.1] - 2021-04-07
 

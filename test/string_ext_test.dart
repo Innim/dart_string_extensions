@@ -13,14 +13,14 @@ void main() {
         });
 
         test('empty string', () {
-          final foo = '';
+          const foo = '';
 
           expect(foo.isNullOrEmpty, true);
           expect(foo.isNotNullNorEmpty, false);
         });
 
         test('not empty iterable', () {
-          final foo = 'some';
+          const foo = 'some';
 
           expect(foo.isNullOrEmpty, false);
           expect(foo.isNotNullNorEmpty, true);

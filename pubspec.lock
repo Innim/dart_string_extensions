@@ -113,6 +113,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.0"
+  innim_lint:
+    dependency: "direct dev"
+    description:
+      name: innim_lint
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.0"
   io:
     dependency: transitive
     description:
@@ -177,7 +184,7 @@ packages:
     source: hosted
     version: "1.8.0"
   pedantic:
-    dependency: "direct dev"
+    dependency: transitive
     description:
       name: pedantic
       url: "https://pub.dartlang.org"

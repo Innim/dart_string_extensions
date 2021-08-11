@@ -2,6 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/string_ext)](https://pub.dartlang.org/packages/string_ext)
 ![Dart CI](https://github.com/Innim/dart_string_extensions/workflows/Dart%20CI/badge.svg?branch=main)
+[![innim lint](https://img.shields.io/badge/style-innim_lint-40c4ff.svg)](https://pub.dev/packages/innim_lint)
 
 Dart extension methods for a `String`.
 
