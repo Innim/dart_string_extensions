@@ -1,3 +1,4 @@
+## [0.1.2] - 2021-08-11
 
 * Method `firstToLower()` - converts first character in the string to lower case.
 * Added `innim_lint` analysis ruleset.
